@@ -7,7 +7,7 @@ const rgbText = document.querySelector('.rgb');
 let freeze = false;
 
 
-console.log('Hello, world')
+console.log('Hello, world!')
 function trackMouse(e){
     if (freeze === false){
         let width = window.innerWidth;
@@ -17,12 +17,11 @@ function trackMouse(e){
         h = Math.ceil(x / width * 357)
         s = Math.ceil(y / height * 100)
         hsl.backgroundColor = `hsl(${h},${100-s}%,${l}%)`;
-        console.log(document.body.style.backgroundColor);
         updateText();
     }
 }
 function luminosityScroll(e){
-    wheel = -e.wheelDelta;
+    wheel = e.deltaY;
     if (wheel < 0 && l > 0){
         l = l - 1; 
     }
@@ -41,10 +40,15 @@ function updateText(){
 
 function toggleFreeze(e){
     freeze === true ? freeze = false : freeze = true; 
-    trackMouse(window.event);
+    trackMouse(e);
     console.log("Freeze, " + freeze)
 }
 
-window.addEventListener("mousemove", trackMouse )
-window.addEventListener("mousewheel", luminosityScroll, false);
-window.addEventListener("mousedown", toggleFreeze)
+
+function debug(){
+    console.log("Scroll Detected");
+}
+
+window.addEventListener("mousemove", trackMouse );
+window.addEventListener("wheel", luminosityScroll, false);
+window.addEventListener("mousedown", toggleFreeze);
