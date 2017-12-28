@@ -8,4 +8,4 @@
 
 **Afterthoughts:** Tested it in Firefox and i'd overlooked the mousewheel event listener being slightly different. Need to learn to catch these early on.
 
-**Link to work:** [Color Picker](http://justin-focus.co.uk/100-days-of-code/days/1/)
+**Link to work:** [Color Picker](http://justin-focus.co.uk/100-days-of-code/days/0/index.html)
