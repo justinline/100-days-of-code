@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Comfortaa');
+        * {
+            font-family: 'Comfortaa', 'serif';
+        }
+        body{
+            background:hsl(0, 0%, 50%);
+        }
+        .color-name{
+            text-align: center;
+            max-width:300px;
+            margin:25vh auto;
+            padding:20px;
+            background:#fff;
+            border-radius: 30px;
+        }
+        p{
+            font-size:.8em;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="color-name">
+        <h3>🌈 Full Page Color Picker 🌈</h3>
+        <p>Move mouse ↔️ to change hue</p>
+        <p>Move mouse ↕️ saturation</p>
+        <p>Mouse Wheel ↕️ luminosity</p>
+        <p>Mouse click to freeze</p>
+        <p>hsl<span class="hsl">(0,0%,50%)</span></p>
+        <p><span class="rgb">rgb(0,0,0)</span></p>
+    </div>
+    <script src="app.js"></script>    
+</body>
+</html>
