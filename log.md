@@ -24,4 +24,4 @@
 
 **Thoughts:** Quite a lengthy process, would like to see how I can streamline. Need to work out how to pull any updates without intefering with migrations, data and such.
 
-**Link to work:** [Slot Machine](http://justin-focus.co.uk/100-days-of-code/days/2/index.html)
+**Link to work:** [Django Deployment!](http://justin-focus.co.uk/100-days-of-code/days/2/index.html)
