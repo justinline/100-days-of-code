@@ -25,3 +25,11 @@
 **Thoughts:** Quite a lengthy process, would like to see how I can streamline. Need to work out how to pull any updates without intefering with migrations, data and such.
 
 **Link to work:** [Django Deployment!](http://justin-focus.co.uk/100-days-of-code/days/2/index.html)
+
+### Day 3: December 31, 2017
+
+**Today's Progress:** Made a 'Is it 2018 yet?' countdown
+
+**Thoughts:** Quick one due to a busy day, didn't have time to think about anything else!
+
+**Link to work:** [Is it 2018 yet?](http://justin-focus.co.uk/100-days-of-code/days/3/index.html)
