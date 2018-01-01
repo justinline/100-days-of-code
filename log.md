@@ -33,3 +33,10 @@
 **Thoughts:** Quick one due to a busy day, didn't have time to think about anything else!
 
 **Link to work:** [Is it 2018 yet?](http://justin-focus.co.uk/100-days-of-code/days/3/index.html)
+
+### Day 4: January 1, 2018
+
+**Today's Progress:** Started the Visualisation projects on FCC
+
+**Thoughts:** Only had enough time to get in some warming up for today. Going to be looking to complete these in the week!
+
