@@ -40,3 +40,8 @@
 
 **Thoughts:** Only had enough time to get in some warming up for today. Going to be looking to complete these in the week!
 
+### Day 5: January 2, 2018
+
+**Today's Progress:** Got started with D3.js on my lunch break
+
+**Thoughts:** It's taking time to get to grips with the library, especially with the differences between v3 and v4 of D3 - lots of advice and examples are written in V3 but i'm going for V4 usage. Got the data loaded and the bars/axes showing, but i'm having trouble figuring out how to style the axes the way I want.

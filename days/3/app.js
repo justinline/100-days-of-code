@@ -1,4 +1,4 @@
-const newDate = new Date('Jan 1, 2018');
+const newDate = new Date('Jan 1, 2019');
 const answerSpace = document.querySelector('.answer');
 const timerDisplay = document.querySelector('.display__time-left');
 let disco = false;
