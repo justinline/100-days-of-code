@@ -32,7 +32,7 @@
         width = +svg.attr("width") - margin.left - margin.right,
         height = +svg.attr("height") - margin.top - margin.bottom;          
 
-        var x = d3.scaleBand().rangeRound([0,width]),
+        var x = d3.scaleTime().range([0,width], .1),
             y = d3.scaleLinear().rangeRound([height, 0]);
 
         var xAxis, yAxis;
@@ -40,24 +40,28 @@
 
         function mapxy(data){
             x.domain(
-                data.map(function(data) { 
-                d.date = data[0];
-                return d.date }));
+                [d3.min(data, (function(data) { 
+                d.date = new Date(data[0]);
+                return d.date;
+            })), 
+            d3.max(data, (function(data) { 
+                d.date = new Date(data[0]);
+                return d.date;
+            }))]);
             
             y.domain([0, d3.max(data, function(data) { 
                 d.gdp = data[1];
+                console.log(d.gdp);
                 return d.gdp;
             })]);
 
             xAxis = d3.axisBottom()
-            .scale(x)
-            .ticks(1);
+            .scale(x).ticks(d3.timeYear.every(5));
         
             yAxis = d3.axisLeft()
             .scale(y)
             .ticks(10);
-            
-        }   
+        }  
         
         function gapp(data) {
 
@@ -87,12 +91,11 @@
             .data(data)
             .enter().append("rect")
                 .attr("class", "bar")
-                .attr("x", function(d) { 
-                    //console.log(d[0]);
-                    return x(d[0]); 
+                .attr("x", function(d, i) { 
+                    return x(new Date(d[0])); 
                 })
                 .attr("y", function(d) { return y(d[1]); })
-                .attr("width", x.bandwidth())
+                .attr("width", 5)
                 .attr("height", function(d) { return height - y(d[1]); });
         }
         function getData() {
