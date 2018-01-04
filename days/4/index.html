@@ -7,36 +7,70 @@
     <title>Day 4 - Data Visualisation - Bar Chart</title>
     <style>
 
+        body {
+            background-color: #ddd;
+            background-repeat: repeat;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAACgCAMAAACsXRuGAAAADFBMVEWIiIjd3d3y8vLm5uZzdc63AAAAbklEQVR42u3ZIQ4AIAwDwI39/8/wAlTFxFUgm5ALmFZV51Iv52Vyx/7CzhdONr3/ylCgQIECBQoUKFCgQIECBQoUKFCgQIECBcrmccGe4qX4vqBAgQIFChQoUKBAgQIFChQoUKBAgQIFij3lX3gBXBBzc8FaGvIAAAAASUVORK5CYII=)
+        }
+        .wrapper{
+            background-color: white;
+            margin: 40px auto;
+            padding: 20px;
+            height: 520px;
+            width: 960px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.32), 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+        }
+        svg{
+            position:absolute;
+        }
         .bar {
-          fill: steelblue;
+          fill: rgb(255, 149, 255);
         }
         
         .bar:hover {
-          fill: brown;
+          fill: rgb(0, 255, 221);
         }
         
         .axis--x path {
           display: none;
         }
+
+
+        div.tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 10px;
+            font: 12px sans-serif;
+            color: #000;
+            font-weight: 700;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+          }
         
         </style>
 </head>
 <body>
+    <div class="wrapper">
     <svg width="960" height="500"></svg>
-
+    </div>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script>
         var formatTime = d3.timeFormat("%Y");
         let svg = d3.select("svg"),
         margin = {top: 20, right: 20, bottom: 30, left: 40},
         width = +svg.attr("width") - margin.left - margin.right,
-        height = +svg.attr("height") - margin.top - margin.bottom;          
+        height = +svg.attr("height") - margin.top - margin.bottom; 
+        
+        var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
 
         var x = d3.scaleTime().range([0,width], .1),
             y = d3.scaleLinear().rangeRound([height, 0]);
 
         var xAxis, yAxis;
-
 
         function mapxy(data){
             x.domain(
@@ -51,7 +85,6 @@
             
             y.domain([0, d3.max(data, function(data) { 
                 d.gdp = data[1];
-                console.log(d.gdp);
                 return d.gdp;
             })]);
 
@@ -95,8 +128,21 @@
                     return x(new Date(d[0])); 
                 })
                 .attr("y", function(d) { return y(d[1]); })
-                .attr("width", 5)
-                .attr("height", function(d) { return height - y(d[1]); });
+                .attr("width", width / data.length)
+                .attr("height", function(d) { return height - y(d[1]); })
+                .on("mouseover", function(d) {
+                    div.transition()
+                      .duration(200)
+                      .style("opacity", .9);
+                    div.html("<p>$" + d[1] + " Billion <br/>" + d[0] + "</p>")
+                      .style("left", (d3.event.pageX) + "px")
+                      .style("top", (d3.event.pageY - 28) + "px");
+                    })
+                  .on("mouseout", function(d) {
+                    div.transition()
+                      .duration(500)
+                      .style("opacity", 0);
+                    });
         }
         function getData() {
             let endpoint = 'https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json';

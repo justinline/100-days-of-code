@@ -45,3 +45,9 @@
 **Today's Progress:** Got started with D3.js on my lunch break
 
 **Thoughts:** It's taking time to get to grips with the library, especially with the differences between v3 and v4 of D3 - lots of advice and examples are written in V3 but i'm going for V4 usage. Got the data loaded and the bars/axes showing, but i'm having trouble figuring out how to style the axes the way I want.
+
+### Day 6: January 3, 2018
+
+**Today's Progress:** Finished constructing the D3 Bar chart
+
+**Thoughts:** Took time to differentiate through the differences between V3 and V4 of D3.js - some of the functions are pretty different in name. Need to add title and some better styling still but this is progress enough for the time being!
