@@ -51,3 +51,9 @@
 **Today's Progress:** Finished constructing the D3 Bar chart
 
 **Thoughts:** Took time to differentiate through the differences between V3 and V4 of D3.js - some of the functions are pretty different in name. Need to add title and some better styling still but this is progress enough for the time being!
+
+### Day 7: January 4, 2018
+
+**Today's Progress:** Coachella Roulette
+
+**Thoughts:** Needed some new inspiration for music to listen to at work. Decided to make a script to select a random performer from the Coachella 2018 lineup. Very fun, quick and extremely satisfying. May add some more functionality in future.
