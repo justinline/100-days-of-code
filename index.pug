@@ -1,8 +1,18 @@
 doctype html
 head
-    link(rel="icon", href="favicon.ico", type="image/x-icon")
-    link(rel="stylesheet", href="static/css/styles.css")
-    title Justin Focus - Web Developer & Technical Designer
+<!-- Global site tag (gtag.js) - Google Analytics -->
+script(async, src="https://www.googletagmanager.com/gtag/js?id=UA-78391506-1")
+script.
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-78391506-1');
+
+
+link(rel="icon", href="favicon.ico", type="image/x-icon")
+link(rel="stylesheet", href="static/css/styles.css")
+title Justin Focus - Web Developer & Technical Designer
 body(id="bg")
   div(id="wrapper")
     div(class="main")
@@ -15,8 +25,26 @@ body(id="bg")
       h1(class="name") 100 Days of code:
       
       ul(class="days") 
-        li Day 0: 
+        li 
+          span(class="day") Day 0: 
           a(href="days/0/index.html") Full Page Color Picker
+        li 
+          span(class="day") Day 1: 
+          span Got started with Processing (for Python) and an intro to generative art for later on.
+        li 
+          span(class="day") Day 2:
+          a(href="technical.justin-focus.co.uk") Deployed my Django-powered Portfolio Site with nginx and gunicorn
+        li 
+          span(class="day") Day 3: 
+          a(href="days/3/index.html") 'Is it 2018 yet?' Countdown
+        li 
+          span(class="day") Days 4,5,6: 
+          a(href="days/4/index.html") Starting with D3 for FreeCodeCamp
+        li 
+          span(class="day") Days 7:
+          a(href="days/7/index.html") Coachella Artist Roulette
+
+
 
     script(src="static/js/app.js")
     

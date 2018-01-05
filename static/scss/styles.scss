@@ -131,3 +131,19 @@ ul.links {
 a {
     color:$link-blue;
 }
+
+ul.days{
+    list-style: none;
+    li{
+        margin: 10px 0;
+        font-size:.7em;
+        span.day{
+            font-size:1.2em;        
+            font-weight:700;
+            float:left;
+            width:100%;
+            margin-bottom:5px;
+        }
+
+    }
+}
