@@ -57,3 +57,9 @@
 **Today's Progress:** Coachella Roulette
 
 **Thoughts:** Needed some new inspiration for music to listen to at work. Decided to make a script to select a random performer from the Coachella 2018 lineup. Very fun, quick and extremely satisfying. May add some more functionality in future.
+
+### Day 8 and 9: January 5/6, 2018
+
+**Today's Progress:** CSS Drawings
+
+**Thoughts:** Had serious migraines over the weekend and couldn't bear to look at a screen. The times I did I spend working through 'https://coding-artist.teachable.com/courses/155435' to draw CSS images. 
