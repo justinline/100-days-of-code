@@ -46,20 +46,34 @@
 
 **Thoughts:** It's taking time to get to grips with the library, especially with the differences between v3 and v4 of D3 - lots of advice and examples are written in V3 but i'm going for V4 usage. Got the data loaded and the bars/axes showing, but i'm having trouble figuring out how to style the axes the way I want.
 
-### Day 6: January 3, 2018
+### Day 6/7: January 3/4, 2018
 
 **Today's Progress:** Finished constructing the D3 Bar chart
 
 **Thoughts:** Took time to differentiate through the differences between V3 and V4 of D3.js - some of the functions are pretty different in name. Need to add title and some better styling still but this is progress enough for the time being!
 
-### Day 7: January 4, 2018
+**Link to work:** [D3 Bar Chart](http://justin-focus.co.uk/100-days-of-code/days/4/index.html)
+
+### Day 8: January 5, 2018
 
 **Today's Progress:** Coachella Roulette
 
 **Thoughts:** Needed some new inspiration for music to listen to at work. Decided to make a script to select a random performer from the Coachella 2018 lineup. Very fun, quick and extremely satisfying. May add some more functionality in future.
 
-### Day 8 and 9: January 5/6, 2018
+**Link to work:** [Coachella Roulette](http://justin-focus.co.uk/100-days-of-code/days/7/index.html)
+
+### Day 9 and 10: January 6/7, 2018
 
 **Today's Progress:** CSS Drawings
 
 **Thoughts:** Had serious migraines over the weekend and couldn't bear to look at a screen. The times I did I spend working through 'https://coding-artist.teachable.com/courses/155435' to draw CSS images. 
+
+**Link to work:** [CSS Koala](http://justin-focus.co.uk/100-days-of-code/days/9/index.html)
+
+### Day 11: January 8, 2018
+
+**Today's Progress:** Dove into Rhinoscript for the first time, using python, and made a handy tool for creating cutting lists in my Rhino drawings!
+
+**Thoughts:** Documentation is quite confusing - and there are multiple ways to do certain things. Got there eventually! Using dir() helps a lot to see what methods are bound to an object or class
+
+**Link to work:** [First Rhino Script](https://gist.github.com/justinline/9727a567a1491ad164d185a4274efdae)
