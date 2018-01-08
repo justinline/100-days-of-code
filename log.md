@@ -46,7 +46,7 @@
 
 **Thoughts:** It's taking time to get to grips with the library, especially with the differences between v3 and v4 of D3 - lots of advice and examples are written in V3 but i'm going for V4 usage. Got the data loaded and the bars/axes showing, but i'm having trouble figuring out how to style the axes the way I want.
 
-### Day 6/7: January 3/4, 2018
+### Day 6: January 3, 2018
 
 **Today's Progress:** Finished constructing the D3 Bar chart
 
@@ -54,13 +54,20 @@
 
 **Link to work:** [D3 Bar Chart](http://justin-focus.co.uk/100-days-of-code/days/4/index.html)
 
-### Day 8: January 5, 2018
+### Day 7: January 4, 2018
 
 **Today's Progress:** Coachella Roulette
 
 **Thoughts:** Needed some new inspiration for music to listen to at work. Decided to make a script to select a random performer from the Coachella 2018 lineup. Very fun, quick and extremely satisfying. May add some more functionality in future.
 
 **Link to work:** [Coachella Roulette](http://justin-focus.co.uk/100-days-of-code/days/7/index.html)
+
+### Day 8: January 4, 2018
+
+**Today's Progress:** Server Sysadmin and permissions
+
+**Thoughts:** Learned how to deploy my server in a safer way using a www-data user instead of root(!). Practiced chmod/chown/chgrp etc. Also set policies to alert me when things might go wrong. Wanna try using fabric and saltstack for future deployments.
+
 
 ### Day 9 and 10: January 6/7, 2018
 
