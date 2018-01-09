@@ -84,3 +84,8 @@
 **Thoughts:** Documentation is quite confusing - and there are multiple ways to do certain things. Got there eventually! Using dir() helps a lot to see what methods are bound to an object or class
 
 **Link to work:** [First Rhino Script](https://gist.github.com/justinline/9727a567a1491ad164d185a4274efdae)
+
+### Day 12: January 9, 2018
+
+**Today's Progress:** Did some more RhinoScript on my lunch break to try and automate tasks I do regularly in Rhino3D. Also read about ARIA and making web pages with accessiblity in mind.
+
