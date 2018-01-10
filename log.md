@@ -89,3 +89,8 @@
 
 **Today's Progress:** Did some more RhinoScript on my lunch break to try and automate tasks I do regularly in Rhino3D. Also read about ARIA and making web pages with accessiblity in mind.
 
+### Day 13: January 10, 2018
+
+**Today's Progress:** Made my first EVER Pul request. I was so ridiculously nervous for such a small change haha. I re-checked my code like 50 times then figured I wouldn't learn unless I just went for it, so I hit that button! :)
+
+**Link to work:** [Wagtail Pull Request](https://github.com/wagtail/wagtail/pull/4189)
